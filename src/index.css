@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --neu-bg: #ebf0f7;
+    --neu-surface: #f0f4f9;
+    --neu-dark-shadow: rgba(163, 177, 198, 0.55);
+    --neu-light-shadow: rgba(255, 255, 255, 0.9);
+    --neu-accent: #1e50d8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Calibri', 'Carlito', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: var(--neu-bg);
+    color: #1e293b;
+    font-family: 'Calibri', 'Carlito', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* 2026 Neumorphism Precision Classes */
+.neu-flat {
+  background: #ebf0f7;
+  box-shadow: 8px 8px 18px rgba(166, 180, 200, 0.5), -8px -8px 18px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.neu-flat-white {
+  background: #ffffff;
+  box-shadow: 6px 6px 16px rgba(166, 180, 200, 0.35), -6px -6px 16px rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.neu-convex {
+  background: linear-gradient(145deg, #f8faff, #e2e8f2);
+  box-shadow: 7px 7px 16px rgba(166, 180, 200, 0.45), -7px -7px 16px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.neu-concave {
+  background: linear-gradient(145deg, #e2e8f2, #f8faff);
+  box-shadow: 6px 6px 14px rgba(166, 180, 200, 0.45), -6px -6px 14px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.neu-inset {
+  background: #e5ebf3;
+  box-shadow: inset 4px 4px 8px rgba(166, 180, 200, 0.5), inset -4px -4px 8px rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(200, 210, 225, 0.4);
+}
+
+.neu-btn {
+  background: #ebf0f7;
+  box-shadow: 5px 5px 12px rgba(166, 180, 200, 0.45), -5px -5px 12px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 7px 7px 16px rgba(166, 180, 200, 0.55), -7px -7px 16px rgba(255, 255, 255, 0.95);
+}
+
+.neu-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 3px 3px 6px rgba(166, 180, 200, 0.5), inset -3px -3px 6px rgba(255, 255, 255, 0.9);
+}
+
+.neu-btn-blue {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  box-shadow: 6px 6px 16px rgba(29, 78, 216, 0.35), -5px -5px 14px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(96, 165, 250, 0.5);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.neu-btn-blue:hover {
+  background: linear-gradient(145deg, #1d4ed8, #1e40af);
+  box-shadow: 7px 7px 18px rgba(29, 78, 216, 0.45), -6px -6px 16px rgba(255, 255, 255, 0.9);
+}
+
+.neu-btn-blue:active {
+  box-shadow: inset 3px 3px 7px rgba(15, 23, 42, 0.4), inset -2px -2px 5px rgba(96, 165, 250, 0.4);
+}
+
+.neu-card-red {
+  background: #fdf4f4;
+  box-shadow: 7px 7px 18px rgba(239, 68, 68, 0.15), -7px -7px 18px rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(254, 202, 202, 0.8);
+}
+
+.neu-card-amber {
+  background: #fffbf2;
+  box-shadow: 7px 7px 18px rgba(245, 158, 11, 0.15), -7px -7px 18px rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(253, 230, 138, 0.8);
+}
+
+.neu-card-blue {
+  background: #f4f8ff;
+  box-shadow: 7px 7px 18px rgba(37, 99, 235, 0.15), -7px -7px 18px rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(191, 219, 254, 0.8);
+}
+
+/* Custom Marker styling */
+.custom-leaflet-marker, .custom-infra-marker {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 18px !important;
+  background: #ffffff !important;
+  box-shadow: 8px 8px 24px rgba(166, 180, 200, 0.45), -6px -6px 18px rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  padding: 6px !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  box-shadow: 4px 4px 10px rgba(166, 180, 200, 0.3) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

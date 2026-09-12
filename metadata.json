@@ -1,0 +1,6 @@
+{
+  "name": "Agua y Salud en Tacna - El Perro Azul",
+  "description": "Portal interactivo para el ciudadano de Tacna sobre la calidad del agua, escasez hídrica y evidencia científica de contaminantes (Arsénico, Boro y Aluminio), por el voluntariado El Perro Azul.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
