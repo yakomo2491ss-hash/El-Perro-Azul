@@ -1,4 +1,4 @@
-export type EvidenceLevel = 'clinica_humana' | 'monitoreo_ambiental';
+export type EvidenceLevel = 'clinica_humana' | 'asociacion_epidemiologica' | 'monitoreo_ambiental';
 
 export type ContaminantType = 'arsenico' | 'boro' | 'aluminio' | 'mixto';
 

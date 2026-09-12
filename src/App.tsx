@@ -12,7 +12,9 @@ import { StudyCardList } from './components/StudyCardList';
 import { DistrictChecker } from './components/DistrictChecker';
 import { CitizenGuide } from './components/CitizenGuide';
 import { ScarcityTimeline } from './components/ScarcityTimeline';
+import { StudentInnovationSection } from './components/StudentInnovationSection';
 import { VolunteerSection } from './components/VolunteerSection';
+import { CalanaUpdateBanner } from './components/CalanaUpdateBanner';
 import { Footer } from './components/Footer';
 import { StudyDetailModal } from './components/StudyDetailModal';
 import { ScientificStudy } from './types';
@@ -50,7 +52,7 @@ export default function App() {
           onExploreDistinction={() => scrollToSection('distincion')}
         />
 
-        {/* Key Scientific Distinction Banner (Human Clinical vs Environmental Water Risk) */}
+        {/* Key Scientific Distinction Banner (Human Clinical vs Epidemiological vs Environmental Water Risk) */}
         <EvidenceDistinctionBanner />
 
         {/* Interactive Map */}
@@ -62,6 +64,9 @@ export default function App() {
         {/* Full Scientific Studies Library */}
         <StudyCardList onSelectStudy={handleSelectStudy} />
 
+        {/* October 2025 PTAP Calana Regional Update */}
+        <CalanaUpdateBanner />
+
         {/* District & Basin Checker */}
         <DistrictChecker onSelectStudy={handleSelectStudy} />
 
@@ -70,6 +75,9 @@ export default function App() {
 
         {/* Citizen Guide & Mythbusters */}
         <CitizenGuide />
+
+        {/* Student Initiatives & Circular Economy (Water Treatment & Recovery) */}
+        <StudentInnovationSection />
 
         {/* Volunteer Group "El Perro Azul" Engagement */}
         <VolunteerSection />

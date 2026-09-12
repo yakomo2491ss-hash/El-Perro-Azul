@@ -120,14 +120,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMap, onExplor
             </p>
           </div>
 
-          <div className="neu-card-red rounded-2xl p-5">
+          <div className="neu-card-orange rounded-2xl p-5">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold uppercase tracking-wider text-rose-700">Tacna Ciudad</span>
-              <span className="text-[10px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-full font-bold shadow-sm">Oncológico</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-700">Tacna Ciudad</span>
+              <span className="text-[10px] bg-orange-100 text-orange-800 px-2 py-0.5 rounded-full font-bold shadow-sm">Asociación Observada</span>
             </div>
-            <div className="text-2xl sm:text-3xl font-black text-rose-900 mt-1">29%</div>
-            <p className="text-xs text-rose-800 mt-1 font-medium leading-relaxed">
-              De todos los cánceres en EsSalud Tacna fue de piel; agua de red superó por &gt;5x la norma de arsénico.
+            <div className="text-2xl sm:text-3xl font-black text-orange-900 mt-1">29%</div>
+            <p className="text-xs text-orange-800 mt-1 font-medium leading-relaxed">
+              Cáncer de piel en EsSalud Tacna 2010–2011 con agua &gt;5x norma As. Asociación observada; no demuestra causalidad (UNJBG).
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMap, onExplor
           <div className="neu-card-blue rounded-2xl p-5">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700">Mito Desmentido</span>
-              <span className="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold shadow-sm">DIGESA 2025</span>
+              <span className="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold shadow-sm">DIGESA / Infobae</span>
             </div>
             <div className="text-2xl sm:text-3xl font-black text-blue-900 mt-1">0% eliminados</div>
             <p className="text-xs text-blue-900 mt-1 font-medium leading-relaxed">

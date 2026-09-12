@@ -3,7 +3,7 @@ import { ScientificStudy, DistrictWaterProfile, CitizenFaq } from '../types';
 export const SCIENTIFIC_STUDIES: ScientificStudy[] = [
   {
     id: 'cairani-camilaca-arsenico-2018',
-    title: 'Biomarcadores de Arsénico en Orina y Daño a la Salud en Candarave',
+    title: 'Biomarcadores de Arsénico en Orina en Cairani y Camilaca (Candarave)',
     shortTitle: 'Arsénico en Cairani y Camilaca (Candarave)',
     contaminant: 'arsenico',
     evidenceLevel: 'clinica_humana',
@@ -11,49 +11,49 @@ export const SCIENTIFIC_STUDIES: ScientificStudy[] = [
     province: 'Candarave',
     district: 'Cairani y Camilaca',
     coordinates: [-17.3115, -70.3852],
-    measuredValues: '100% en Cairani y 80.3% en Camilaca con niveles tóxicos (hasta 30 veces el límite seguro en Cairani)',
-    regulatoryLimit: 'Límite de toxicidad de la OMS superado ampliamente',
-    healthFindingsSummary: 'Confirmación directa en cuerpos humanos: Vinculado a diabetes mellitus, hipertensión arterial, anemia megaloblástica, trastornos gastrointestinales y lesiones dérmicas arsenicales visibles.',
-    scientificMethodology: 'Estudio de campo analítico transversal con muestreo biológico de orina en la población residente para cuantificar la excreción del metabolito de arsénico inorgánico y correlación clínica con antecedentes patológicos.',
+    measuredValues: '100% en Cairani y 80.3% en Camilaca con niveles tóxicos en orina (hasta 30 veces el límite seguro en Cairani)',
+    regulatoryLimit: 'Valor de referencia de toxicidad biológica de la OMS superado ampliamente',
+    healthFindingsSummary: 'El 100% en Cairani y 80.3% en Camilaca superaron los valores de toxicidad de arsénico en orina (hasta 30 veces más) — Rev Peru Med Exp Salud Pública, 2018. Adicionalmente, la DIRESA Tacna y el INS reportaron en la misma zona cuadros clínicos de hidroarsenicismo crónico regional endémico (HACRE), con lesiones dérmicas y otros síntomas.',
+    scientificMethodology: 'Estudio de campo analítico transversal con muestreo biológico de orina en pobladores residentes para cuantificar la excreción de metabolitos de arsénico inorgánico por espectrofotometría de absorción atómica.',
     fullCitation: 'Ale-Mauricio D, Villa G, Gastañaga M. Exposición a arsénico y efectos en la salud en pobladores de Cairani y Camilaca, Candarave, Tacna. Rev Peru Med Exp Salud Publica. 2018;35(2):183-9.',
     sourceName: 'Revista Peruana de Medicina Experimental y Salud Pública (SciELO)',
     sourceUrl: 'http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1726-46342018000200002',
     year: 2018,
     keyTakeaways: [
-      'El 100% de los pobladores testeados en Cairani tenía niveles de arsénico por encima del valor de referencia de la OMS.',
-      'En Cairani se registraron concentraciones de hasta 30 veces el umbral seguro en orina humana.',
-      'En Camilaca, el 80.3% de las personas analizadas excedió los valores de toxicidad.',
-      'Se observaron lesiones cutáneas típicas (hiperpigmentación y queratosis palmo-plantar), además de mayor prevalencia de diabetes e hipertensión.'
+      'El 100% de los pobladores testeados en Cairani superó el valor de referencia de la OMS en orina.',
+      'En Cairani se registraron concentraciones de hasta 30 veces el umbral seguro de toxicidad en orina humana.',
+      'En Camilaca, el 80.3% de las personas analizadas excedió los valores de toxicidad biológica (Rev Peru Med Exp Salud Publica, 2018).',
+      'Reportes complementarios de DIRESA Tacna y el INS han documentado cuadros clínicos compatibles con HACRE (lesiones cutáneas arsenicales e hipertensión) en la zona andina.'
     ],
     citizenAdvice: 'En Candarave el agua proviene de fuentes con alto contenido volcánico natural. Las autoridades deben priorizar plantas de abatimiento de arsénico y dotación de agua en bidones seguros a postas y escuelas.',
     verifiedBiomarker: true
   },
   {
     id: 'tacna-ciudad-cancer-arsenico-2011',
-    title: 'Arsénico en Agua Potable Municipal y Cáncer en la Ciudad de Tacna',
-    shortTitle: 'Arsénico y Cáncer de Piel en Tacna Ciudad',
+    title: 'Arsénico en Agua Potable Municipal y Cáncer en la Ciudad de Tacna (2010-2011)',
+    shortTitle: 'Arsénico y Frecuencia de Cáncer en Tacna Ciudad',
     contaminant: 'arsenico',
-    evidenceLevel: 'clinica_humana',
+    evidenceLevel: 'asociacion_epidemiologica',
     locationName: 'Ciudad de Tacna (Zona Urbana y distritos)',
     province: 'Tacna',
     district: 'Tacna, Alto de la Alianza, Cono Sur',
     coordinates: [-18.0146, -70.2536],
     measuredValues: 'Arsénico en agua de red > 5 veces el límite legal peruano (0.01 mg/L)',
-    regulatoryLimit: 'Límite legal DS N° 031-2010-SA: 0.010 mg/L (Superado ampliamente)',
-    healthFindingsSummary: 'El cáncer de piel fue la neoplasia maligna individual más común (29% de todos los tumores registrados en el registro oncológico de EsSalud Tacna 2010-2011).',
-    scientificMethodology: 'Cruce epidemiológico entre el monitoreo físico-químico del agua de la red municipal y el Registro de Cáncer de la Red Asistencial de EsSalud Tacna durante el bienio 2010-2011.',
-    fullCitation: 'Revista Médica Basadrina. Contaminación del agua potable con arsénico y frecuencia del cáncer en la ciudad de Tacna 2010-2011. UNJBG.',
+    regulatoryLimit: 'Límite legal DS N° 031-2010-SA: 0.010 mg/L (Superado por >5x)',
+    healthFindingsSummary: 'Asociación epidemiológica observada: El cáncer de piel fue la neoplasia maligna individual más común (29% de todos los tumores en el registro oncológico de EsSalud Tacna 2010-2011) en la misma ciudad donde el agua de red superó >5x la norma de arsénico. Conclusión de los propios autores: "El presente estudio no demuestra causalidad; se requieren mayores estudios para determinar el grado de asociación."',
+    scientificMethodology: 'Estudio observacional descriptivo y correlacional entre el monitoreo físico-químico del agua de red municipal y el Registro de Cáncer de la Red Asistencial de EsSalud Tacna durante 2010-2011.',
+    fullCitation: 'Ticona-Castro et al. Contaminación del agua potable con arsénico y frecuencia del cáncer en la ciudad de Tacna 2010-2011. Revista Médica Basadrina. 2012;6(1):15-20.',
     sourceName: 'Revista Médica Basadrina (Universidad Nacional Jorge Basadre Grohmann)',
     sourceUrl: 'https://revistas.unjbg.edu.pe/index.php/rmb/article/view/461',
     year: 2011,
     keyTakeaways: [
-      'El agua potable de la ciudad superó por más de 5 veces el límite normativo permisible de arsénico.',
-      'El cáncer de piel representó el 29% de todos los casos de neoplasias malignas atendidas por EsSalud Tacna.',
-      'La ingestión crónica acumulativa de arsénico inorgánico es un carcinógeno humano confirmado (Grupo 1 según IARC).',
-      'Refuerza la exigencia técnica de modernizar de forma urgente las plantas de tratamiento de Calana y Alto Lima.'
+      'El agua potable de la ciudad superó por más de 5 veces el límite normativo permisible de arsénico en el bienio evaluado.',
+      'El cáncer de piel fue la neoplasia más frecuente (29% de todos los tumores registrados en EsSalud Tacna 2010-2011).',
+      'Conclusión de los propios autores: "El presente estudio no demuestra causalidad; se requieren mayores estudios para determinar el grado de asociación."',
+      'A nivel toxicológico internacional general, la IARC clasifica el arsénico como carcinógeno del Grupo 1, pero este estudio local es observacional y no prueba causalidad directa en la muestra.'
     ],
     citizenAdvice: 'Para beber y cocinar alimentos que absorben agua (arroz, sopas), evitar el agua directa del grifo si no cuenta con tratamiento de ósmosis inversa. ¡Hervir no quita el arsénico!',
-    verifiedBiomarker: true
+    verifiedBiomarker: false
   },
   {
     id: 'tacna-embarazo-parto-arsenico-2021',
@@ -138,27 +138,28 @@ export const SCIENTIFIC_STUDIES: ScientificStudy[] = [
   },
   {
     id: 'digesa-2025-aluminio-metales-pesados',
-    title: 'Informe Nacional DIGESA 2025: Aluminio y Metales Pesados en Agua de Tacna',
-    shortTitle: 'Aluminio y Metales en Agua Potable (DIGESA 2025)',
+    title: '2025 (difusión) / 2021-2022 (muestreo) — Informe DIGESA: Aluminio y Metales Pesados en Agua de Tacna',
+    shortTitle: 'Aluminio y Metales en Agua (Muestreo 2021-22 / Difusión 2025)',
     contaminant: 'aluminio',
     evidenceLevel: 'monitoreo_ambiental',
     locationName: 'Redes de distribución y plantas de Tacna',
     province: 'Tacna',
     district: 'Departamental / Redes Urbanas',
     coordinates: [-17.9621, -70.1983],
-    measuredValues: 'Presencia no conforme de aluminio, junto con arsénico, mercurio, níquel y plomo en fuentes evaluadas',
+    measuredValues: 'Muestreo de campo realizado en 2021-2022; resultados difundidos públicamente por Infobae Perú en abril de 2025. Presencia no conforme de aluminio, junto con arsénico, mercurio, níquel y plomo en fuentes evaluadas',
     regulatoryLimit: 'Reglamento de Calidad de Agua para Consumo Humano DIGESA',
-    healthFindingsSummary: 'Reporte regulatorio oficial. Funcionarios advierten que "hervir el agua no elimina los metales pesados y su consumo prolongado puede generar problemas de salud crónicos", pero se trata de una fiscalización de agua, no de un seguimiento a pacientes.',
-    scientificMethodology: 'Fiscalización sanitaria nacional de la Dirección General de Salud Ambiental (DIGESA) sobre sistemas de abastecimiento de agua potable en diversas regiones del Perú.',
-    fullCitation: 'Infobae. Agua potable de Lima y otras regiones contenía coliformes fecales y metales pesados, según análisis de DIGESA. Publicado el 18 de abril de 2025.',
-    sourceName: 'Infobae Perú (Cobertura del reporte DIGESA 2025)',
+    healthFindingsSummary: 'Reporte regulatorio oficial. El muestreo de campo corresponde a monitoreos de 2021-2022 divulgados periodísticamente en abril de 2025. Los funcionarios advierten que "hervir el agua no elimina los metales pesados", pero se trata de una fiscalización físico-química del agua potable, no de un seguimiento a pacientes.',
+    scientificMethodology: 'Fiscalización sanitaria nacional de la Dirección General de Salud Ambiental (DIGESA) con muestreo de campo realizado en 2021-2022 sobre redes y sistemas de abastecimiento de agua potable en diversas regiones del Perú.',
+    fullCitation: 'DIGESA (muestreo 2021-2022) / Cobertura Infobae Perú. Agua potable de Lima y otras regiones contenía coliformes fecales y metales pesados, según análisis de DIGESA. Publicado el 18 de abril de 2025.',
+    sourceName: 'DIGESA (Muestreo 2021-2022) / Infobae Perú (Abril 2025)',
     sourceUrl: 'https://www.infobae.com/peru/2025/04/18/agua-potable-de-lima-y-otras-regiones-contenia-coliformes-fecales-y-metales-pesados-segun-analisis-de-digesa/',
     year: 2025,
     keyTakeaways: [
-      'DIGESA detectó aluminio y otros metales pesados en muestras de agua potable de Tacna.',
+      'Muestreo de campo realizado en 2021-2022; resultados difundidos públicamente por Infobae Perú en abril de 2025.',
+      'DIGESA detectó aluminio y otros metales pesados en muestras de agua potable de Tacna durante las inspecciones de 2021-2022.',
       'ADVERTENCIA VITAL: Hervir el agua no destruye ni volatiliza los metales pesados; al hervir se pierde vapor y el metal se concentra más en la olla.',
       'DISTINCIÓN CLAVE: Es un informe de vigilancia sanitaria del agua; no evalúa pacientes individuales ni vincula clínicamente enfermedades a este hallazgo en Tacna.',
-      'Exige fiscalización estricta sobre las EPS y plantas de potabilización.'
+      'Exige fiscalización técnica y control estricto sobre las EPS y plantas de potabilización.'
     ],
     citizenAdvice: '¡No confíes en que hervir el agua la "descontamina" de metales! Hervir solo elimina bacterias y microbios, pero no arsénico ni aluminio.',
     verifiedBiomarker: false
@@ -191,6 +192,20 @@ export const SCIENTIFIC_STUDIES: ScientificStudy[] = [
   }
 ];
 
+export const CALANA_2025_UPDATE = {
+  date: 'Octubre 2025 (Inaugurada el 3 de octubre de 2025)',
+  badge: 'Actualizado oct. 2025',
+  title: 'Ampliación de la Planta de Tratamiento de Agua Potable de Calana',
+  entity: 'Gobierno Regional de Tacna y EPS Tacna S.A.',
+  summary: 'El Gobierno Regional y la EPS Tacna inauguraron la ampliación de la planta de tratamiento de Calana, con un sistema de coagulación con cloruro férrico automatizado. Según reportes de laboratorio, el arsénico en el agua tratada que sale de esta planta está ahora por debajo de la mitad del límite legal (<0.005 mg/L frente a los 0.010 mg/L permitidos).',
+  benefitedUrbanDistricts: 'Tacna Cercado, Alto de la Alianza y Ciudad Nueva',
+  unresolvedIssues: [
+    'El agua cruda de las fuentes y ríos (Caplina y Uchusuma), que sigue siendo naturalmente alta en arsénico volcánico.',
+    'El agua de riego agrícola, que no recibe este tratamiento de potabilización.',
+    'Las zonas rurales y altoandinas como Cairani y Camilaca (Candarave), que no se abastecen de esta planta urbana.'
+  ]
+};
+
 export const DISTRICT_PROFILES: DistrictWaterProfile[] = [
   {
     id: 'tacna-cercado',
@@ -198,9 +213,9 @@ export const DISTRICT_PROFILES: DistrictWaterProfile[] = [
     province: 'Tacna',
     waterSources: ['Planta de Tratamiento de Calana (Río Caplina)', 'Pozos de Viñani / Sobraya'],
     rationingAvgHours: '6 a 10 horas diarias (horarios discontinuos)',
-    primaryRiskNotes: 'Históricamente expuesto a concentraciones de arsénico en la red municipal; el estudio de 2011 halló una fuerte incidencia de cáncer de piel en asegurados de EsSalud.',
+    primaryRiskNotes: 'Históricamente expuesto a concentraciones de arsénico en la red municipal (>5x norma en 2011 con alta tasa observada de cáncer de piel en EsSalud, sin causalidad probada). ACTUALIZACIÓN OCT. 2025: La ampliación de la PTAP Calana redujo el arsénico en el agua tratada a menos de la mitad del límite legal para la red urbana.',
     relevantStudyIds: ['tacna-ciudad-cancer-arsenico-2011', 'tacna-embarazo-parto-arsenico-2021', 'digesa-2025-aluminio-metales-pesados'],
-    waterAdvice: 'Utilizar agua embotellada o de dispensadores con ósmosis inversa para consumo directo y sopas. Lavar frutas y verduras es seguro si se secan.'
+    waterAdvice: 'El agua tratada de red ha mejorado tras la ampliación de Calana. Para beber y cocinar, se recomienda mantener filtros certificados o hervir para desinfección microbiológica sin sobre-evaporar.'
   },
   {
     id: 'gregorio-albarracin',
@@ -216,9 +231,9 @@ export const DISTRICT_PROFILES: DistrictWaterProfile[] = [
     id: 'alto-de-la-alianza',
     name: 'Alto de la Alianza',
     province: 'Tacna',
-    waterSources: ['Planta de Alto Lima', 'Canal Uchusuma / Caplina'],
+    waterSources: ['Planta de Alto Lima', 'Canal Uchusuma / Caplina', 'Interconexión PTAP Calana'],
     rationingAvgHours: '3 a 6 horas diarias',
-    primaryRiskNotes: 'Ubicado en el cono norte de la ciudad, identificado en el estudio de gestantes (UPCH 2021) como uno de los sectores con mayor exposición biológica a arsénico.',
+    primaryRiskNotes: 'Ubicado en el cono norte de la ciudad, identificado en el estudio de gestantes (UPCH 2021) como uno de los sectores con mayor exposición biológica a arsénico. ACTUALIZACIÓN OCT. 2025: Recibe agua tratada con cloruro férrico de la ampliada PTAP Calana, con reporte en norma.',
     relevantStudyIds: ['tacna-embarazo-parto-arsenico-2021', 'tacna-ciudad-cancer-arsenico-2011'],
     waterAdvice: 'Prioridad máxima de agua filtrada certificada para mujeres embarazadas y niños pequeños.'
   },
@@ -226,9 +241,9 @@ export const DISTRICT_PROFILES: DistrictWaterProfile[] = [
     id: 'ciudad-nueva',
     name: 'Ciudad Nueva',
     province: 'Tacna',
-    waterSources: ['Planta de Alto Lima', 'Línea de conducción Uchusuma'],
+    waterSources: ['Planta de Alto Lima', 'Línea de conducción Uchusuma', 'Interconexión PTAP Calana'],
     rationingAvgHours: '3 a 5 horas diarias',
-    primaryRiskNotes: 'Sufre la mayor severidad de tandeo por cota altimétrica. Familias obligadas a almacenar en baldes y tanques donde proliferan bacterias secundarias.',
+    primaryRiskNotes: 'Sufre la mayor severidad de tandeo por cota altimétrica. Familias obligadas a almacenar en baldes y tanques donde proliferan bacterias secundarias. Se beneficia de la ampliación de Calana para el abastecimiento potable urbano.',
     relevantStudyIds: ['tacna-embarazo-parto-arsenico-2021'],
     waterAdvice: 'Tapar herméticamente los recipientes de almacenamiento para evitar el zancudo del dengue y la formación de moho.'
   },
@@ -283,10 +298,18 @@ export const CITIZEN_FAQS: CitizenFaq[] = [
   },
   {
     id: 'diferencia-estudios',
-    question: '¿Cuál es la diferencia entre lo que pasa con el arsénico y con el boro o aluminio?',
-    shortAnswer: 'Para el arsénico hay pruebas en humanos (enfermedades y orina) en Tacna; para el boro y aluminio hay riesgo en el agua pero faltan estudios en personas.',
-    detailedExplanation: 'Esta distinción es esencial para no caer en alarmismos infundados ni en negligencias: Con el arsénico, médicos peruanos midieron directamente en la orina de pobladores de Candarave (donde el 100% en Cairani superó normas) y revisaron historias de cáncer de piel en EsSalud Tacna. Con el boro y el aluminio, sabemos que el agua supera los límites permitidos (estudios ambientales de USMP y DIGESA), lo que representa un riesgo potencial grave, pero la ciencia aún tiene pendiente medir biomarcadores en humanos tacneños para comprobar causalidad clínica.',
+    question: '¿Cuál es la escala de rigor científico entre el arsénico, el cáncer, el boro y el aluminio?',
+    shortAnswer: 'Distinguimos 3 niveles: 1) Daño biológico directo en personas (orina en Candarave), 2) Asociación observada sin causalidad probada (cáncer EsSalud 2011), y 3) Monitoreo ambiental en agua (boro/aluminio).',
+    detailedExplanation: 'Esta distinción es esencial para mantener la honestidad y credibilidad científica ante la comunidad: (1) En Candarave se midieron biomarcadores de orina en humanos (Ale-Mauricio et al., 2018; 100% de Cairani superó normas). (2) En la ciudad de Tacna, el estudio oncológico de 2011 detectó que el 29% de los cánceres en EsSalud fue de piel coincidiendo con agua >5x norma; sin embargo, los propios autores aclaran que el estudio no demuestra causalidad y pide más investigación. (3) Con el boro y el aluminio, sabemos que el agua supera límites ambientales (USMP, DIGESA), pero no hay estudios clínicos de biomarcadores en personas de Tacna.',
     category: 'salud',
+    highlight: true
+  },
+  {
+    id: 'calana-octubre-2025',
+    question: '¿La ampliación de la planta de Calana (octubre 2025) soluciona el problema del arsénico?',
+    shortAnswer: 'Mejora de forma significativa el agua tratada de red urbana en Tacna, pero persisten 3 limitaciones críticas.',
+    detailedExplanation: 'El 3 de octubre de 2025 se inauguró la ampliación de la PTAP Calana con coagulación automatizada con cloruro férrico, logrando que el agua de salida registre arsénico por debajo de la mitad del límite legal (<0.005 mg/L). Esto beneficia el agua potable de Tacna Cercado, Alto de la Alianza y Ciudad Nueva. Sin embargo, no resuelve: (1) El agua cruda de las cuencas y ríos, que sigue teniendo alta carga natural; (2) El agua de riego agrícola que no pasa por la planta; (3) Las zonas rurales altoandinas (como Cairani y Camilaca) que no se abastecen de esta planta urbana.',
+    category: 'soluciones',
     highlight: true
   },
   {

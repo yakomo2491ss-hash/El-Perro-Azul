@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Droplets, MapPin, BookOpen, AlertTriangle, ShieldCheck, Users, Menu, X } from 'lucide-react';
+import { Droplets, MapPin, BookOpen, AlertTriangle, ShieldCheck, Users, Menu, X, Recycle } from 'lucide-react';
 
 interface HeaderProps {
   activeTab: string;
@@ -14,6 +14,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
     { id: 'distincion', label: 'Arsénico vs Boro/Aluminio', icon: AlertTriangle },
     { id: 'estudios', label: 'Evidencia Científica', icon: BookOpen },
     { id: 'distritos', label: 'Consulta tu Distrito', icon: Droplets },
+    { id: 'innovacion', label: 'Innovación & Circularidad', icon: Recycle },
     { id: 'guia', label: 'Mitos y Guía Hogar', icon: ShieldCheck },
     { id: 'voluntariado', label: 'El Perro Azul', icon: Users },
   ];
@@ -59,16 +60,18 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
         <div className="flex items-center justify-between h-20">
           
           {/* Brand Logo & Name */}
-          <div className="flex items-center gap-3.5 cursor-pointer" onClick={() => handleNavClick('hero')}>
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('hero')}>
             {/* Logo Image with 2026 Neumorphic Frame */}
-            <div className="relative overflow-hidden rounded-2xl neu-flat w-14 h-14 bg-white flex-shrink-0 flex items-center justify-center p-1 transition-all duration-300 hover:scale-105">
+            <div className="relative overflow-hidden rounded-2xl neu-flat w-13 h-13 sm:w-14 sm:h-14 bg-white flex-shrink-0 flex items-center justify-center p-1 transition-all duration-300 hover:scale-105 shadow-sm">
               <img
-                src="/logo-perro-azul.jpg"
+                src="/perro-azul-icon.jpg"
                 alt="Logo El Perro Azul - Voluntariado Tacna"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-xl"
                 onError={(e) => {
-                  const target = e.target as HTMLElement;
-                  target.style.display = 'none';
+                  const img = e.currentTarget;
+                  if (img.src.indexOf('logo-perro-azul.jpg') === -1) {
+                    img.src = '/logo-perro-azul.jpg';
+                  }
                 }}
               />
             </div>
@@ -76,13 +79,13 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
             {/* Brand Typography */}
             <div className="flex flex-col">
               <div className="flex items-baseline gap-1.5">
-                <span className="text-[11px] uppercase tracking-widest text-slate-500 font-bold">Voluntariado</span>
+                <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Voluntariado</span>
                 <span className="text-[10px] px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full font-bold border border-blue-200 shadow-sm">Tacna</span>
               </div>
-              <h1 className="text-2xl font-black text-blue-700 tracking-tight leading-none flex items-center gap-1 font-serif italic">
+              <h1 className="text-xl sm:text-2xl font-black text-blue-700 tracking-tight leading-none flex items-center gap-1 font-serif italic">
                 El Perro Azul
               </h1>
-              <p className="text-[10px] font-black text-slate-700 tracking-[0.2em] uppercase font-mono mt-0.5">
+              <p className="text-[9.5px] sm:text-[10px] font-black text-slate-700 tracking-[0.2em] uppercase font-mono mt-0.5">
                 LIDERA • IMPACTA • CRECE
               </p>
             </div>

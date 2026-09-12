@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:text-white flex items-center gap-1.5 transition-colors"
                 >
-                  <span>• DIGESA 2025 / Infobae (Metales Pesados en Agua Potable)</span>
+                  <span>• DIGESA (Muestreo 2021-22 / Difusión 2025 Infobae)</span>
                   <ExternalLink className="w-3 h-3 text-slate-500" />
                 </a>
               </li>
@@ -132,6 +132,11 @@ export const Footer: React.FC = () => {
                   <span>• Rev Neuropsiquiatr 2024 (Toxicología de Aluminio en Sur del Perú)</span>
                   <ExternalLink className="w-3 h-3 text-slate-500" />
                 </a>
+              </li>
+              <li>
+                <div className="text-slate-400 flex items-center gap-1.5">
+                  <span>• Innovación Estudiantil: Vitaclean H₂O (UNMSM) y Economía Circular</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -154,8 +159,17 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
           <p>© {new Date().getFullYear()} Voluntariado El Perro Azul. Todos los derechos reservados para la ciudadanía de Tacna.</p>
-          <div className="flex items-center gap-1 text-slate-400">
-            <span>Hecho con devoción por Tacna y su gente</span>
+          <div className="flex items-center gap-3 text-slate-400">
+            <span>Hecho con rigor por Tacna y su gente</span>
+            <span className="text-slate-700">•</span>
+            <a
+              href="https://www.instagram.com/schipherx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors inline-flex items-center gap-0.5 tracking-tight"
+            >
+              Web Powered by <span className="font-semibold text-slate-400 hover:underline">SchipherX</span>
+            </a>
           </div>
         </div>
 
